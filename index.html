@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano cartesiano</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500" style="border: 1px solid #000;"></canvas>
+    <form class="formulario">
+
+      <div class="instrucciones">
+        <h2 class="instrucciones__titulo">Instrucciones</h2>
+        <div class="instrucciones__movimientos">
+          <p>w: Arriba</p>
+          <p>s: Abajo</p>
+          <p>a: Izquierda</p>
+          <p>d: Derecha</p>
+        </div>
+        <p class="error">Introduce un valor válido</p>
+      </div>
+
+      <input type="text" maxlength="1" class="inp-movimiento">
+      <button type="submit" class="boton btn-mover">Mover</button>
+
+    </form>
+
+    <div class="modal">
+
+      <div class="modal__contenedor">
+
+        <h2 class="modal__titulo">Confirmación de movimiento</h2>
+
+        <p class="modal__parrafo">El movimiento será hacia "<span class="modal__movimiento"></span>"</p>
+
+        <div class="modal__botones">
+          <button class="boton modal__confirmar">Confirmar</button>
+          <button class="boton modal__cancelar">Cancelar</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
