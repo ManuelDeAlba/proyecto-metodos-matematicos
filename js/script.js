@@ -72,8 +72,8 @@ function dibujar(){
 function enviar(e){
   e.preventDefault();
 
-  movimiento = inpMovimiento.value[0];
-
+  movimiento = inpMovimiento.value[0].toLowerCase();
+  
   // Manejo de errores
   if(!movimiento) return;
 
